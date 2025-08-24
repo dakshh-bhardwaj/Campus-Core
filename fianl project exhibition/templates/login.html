@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Role</h1>
+        <form method="POST">
+            <select name="role">
+                <option value="admin">Admin</option>
+                <option value="hostel">Hostel</option>
+                <option value="mess">Mess</option>
+            </select>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
